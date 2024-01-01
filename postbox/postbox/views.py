@@ -40,7 +40,7 @@ def write(request):
     else:
         msg = Message.create(writer, content)
         msg.save()
-        return HttpResponse("작성 후에는 수정/삭제가 불가능합니다.")
+        return HttpResponse("작성 후에는 수정 및 삭제가 불가능합니다.")
     
 def list(request): #편지목록 불러오기
     if request.method == "GET":
